@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{{ q }}</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+
+        <h1>Search result for '{{q}}'</h1>
+
+        <div class="img-display">
+            {{#each urls}}
+                <img src="{{this}}" alt="">
+            {{/each}}
+        </div>
+
+        <div class="row-align">
+            <form method="GET" action="/search">
+                <input type="hidden" name="q" value="{{q}}">
+                <input type="hidden" name="offset" value="{{prev_pg}}">
+                <input type="hidden" name="count" value="{{count}}">
+                <button type="submit" {{disable_prev}}>Previous</button>
+            </form>
+            <form method="GET" action="/search">
+                <input type="hidden" name="q" value="{{q}}">
+                <input type="hidden" name="offset" value="{{next_pg}}">
+                <input type="hidden" name="count" value="{{count}}">
+                <button type="submit" {{disable_next}}>Next</button>
+            </form>
+        </div>
+        
+    </body>
+</html>

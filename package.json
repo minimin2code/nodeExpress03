@@ -1,0 +1,24 @@
+{
+  "name": "ssf_day09_review",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://chukmunnlee@github.com/chukmunnlee/ssf_day09_review.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chukmunnlee/ssf_day09_review/issues"
+  },
+  "homepage": "https://github.com/chukmunnlee/ssf_day09_review#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "request": "^2.88.0"
+  }
+}

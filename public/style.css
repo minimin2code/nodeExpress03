@@ -1,0 +1,23 @@
+.img-display {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+}
+
+.row-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    height: 10vh;
+    font-size: 2em;
+}
+
+.img-display>img {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 15vw;
+    margin-right: 10px;
+}
