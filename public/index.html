@@ -1,39 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Search Giphy</title>
-	</head>
-	<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Min's Giphy App</title>
+</head>
+<body>
+    <h1>Min's Giphy App</h1>
+    <form method='GET' action="/image">
+        <div>
+        <label for ="imgName">Search Term: </label>
+        <input type ="text" id="imgName" name="imgName" 
+               placeholder="Type your search here.." required>
+        </div>
+        <br><br><br>
 
-		<h1>Search Giphy</h1>
-
-		<form method="GET" action="/search">
-			<table>
-				<tr>
-					<td>
-						<label for="q"> Search Term: </label>
-					</td>
-					<td>
-						<input type="text" name="q" placeholder="Your search string" required id="q">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label for="count">Number of Giphy:</label>
-					</td>
-					<td>
-						<input type="number" name="count" id="count" value="10" min="1">
-					</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>
-						<button type="submit">Search</button>
-					</td>
-				</tr>
-			</table>
-		</form>
-		
-	</body>
+        <div>
+            <button type="submit">Search</button>
+        </div>
+        
+    </form>
+</body>
 </html>

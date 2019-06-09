@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Min's Giphy App</title>
+</head>
+<body>
+    <h1>Search results for {{img}} </h1>
+    <hr>
+
+<table>
+            <tr>
+                
+                <td>
+                    let urls=[];
+                    for (let d of dataArray){
+                        urls.push({{d.images.fixed_width.url}})
+                    }
+
+                    {{#each dataArray}}
+                        <div class="center-line">
+                            <iframe src="https://giphy.com/embed/{{this.id}}"></iframe>
+                            <img src="{{this.images.fixed_width.url}}" alt="">
+
+                        </div>
+                    {{/each}}
+                    
+                    <div>
+                        Total Results : {{ pageArray.total_count}}
+     
+                </td>
+            </tr>
+        </table>
+
+</body>
+</html>
